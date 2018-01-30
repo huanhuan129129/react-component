@@ -27,6 +27,7 @@ class App extends Component {
   }
   
   add() {
+    Perf.start();
     const  { data, num } = this.state;
     data.push(dataGenerate())
     this.setState({
@@ -35,6 +36,7 @@ class App extends Component {
   }
 
   delete() {
+    Perf.start();
     const  { data, num } = this.state;
     data.pop()
     this.setState({

@@ -25,7 +25,7 @@ export default class Tr extends Component {
     render() {
         const data = this.props.data;
         const { edit, value } = this.state;
-
+        console.log('render tr')
         return (<div className="tr">
             <div className="cell">
                 <div className="cell__child-container">
